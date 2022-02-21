@@ -9,6 +9,9 @@ inputs:
     description: "Arguments for the Google Java Format executable"
     required: false
     default: "--replace"
+  exclude:
+    description: "Regular expression pattern to match files to be excluded/ignored"
+    required: false
   files:
     description: "Pattern to match files to be formatted"
     required: false
@@ -29,4 +32,4 @@ inputs:
     default: "Google Java Format"
 runs:
   using: "node12"
-  main: "index.js"
+  main: "dist/index.js"
